@@ -146,13 +146,17 @@ body {
   display: flex;
   margin-left: auto;
 }
+.icon-address {
+  margin-right: 10px;
+}
 .contact-list .contact {
-  display: block;
+  display: flex;
+  align-items: center;
   padding-top: 32px;
   padding-bottom: 32px;
 
   color: var(--primary-text-color);
-
+  fill: var(--primary-text-color);
   font-weight: 500;
   /* font-size: 14px; наследуется из боди */
   line-height: 1.14;
@@ -161,6 +165,7 @@ body {
 .contact-list .contact:focus,
 .contact-list .contact:hover {
   color: var(--accent-color);
+  fill: var(--accent-color);
 }
 
 .contact-list .list-item:not(:last-child) {
@@ -182,11 +187,24 @@ body {
 
 /* Секция-герой */
 .hero-zone {
+  height: 600px;
+  max-width: 1600px;
   padding-top: 200px;
   padding-bottom: 200px;
+  margin-left: auto;
+  margin-right: auto;
   text-align: center;
 
-  background-color: var(--primary-background-color);
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/hero.jpg);
+  background-color: #c4c4c4;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 .hero-zone .hero-header {
   width: 696px;
@@ -238,7 +256,22 @@ body {
 .benefits-list .list-item:not(:last-child) {
   margin-right: 30px;
 }
+.benefit-icon {
+  width: 70px;
+  height: 70px;
+}
+.benefit-icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 270px;
+  height: 120px;
+  margin-bottom: 30px;
 
+  background-color: var(--secondary-background-color);
+  border-radius: 4px;
+  border-color: transparent;
+}
 .benefits-list .benefit-header {
   color: var(--title-primary-text-color);
   /* font-weight: 700; значение для заголовков умолчанию*/
