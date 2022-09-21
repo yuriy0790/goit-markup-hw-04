@@ -7,6 +7,7 @@
   --page-background: #ffffff;
   --accent-color: #2196f3;
   --logo-color: #000000;
+  --icon-main-color: #afb1b8;
 }
 
 html {
@@ -343,7 +344,7 @@ body {
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  color: #afb1b8;
+  color: var(--icon-main-color);
 }
 .social-icon {
   height: 20px;
@@ -354,7 +355,33 @@ body {
   background-color: var(--accent-color);
   color: var(--page-background);
 }
+/* Постійні клієнти */
+.clients-list {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+.clients-list-item a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 170px;
+  height: 92px;
+  border: 1px solid var(--icon-main-color);
+  border-radius: 4px;
 
+  color: var(--icon-main-color);
+}
+
+.client-icon {
+  height: 60px;
+  width: 106px;
+  fill: currentColor;
+}
+.clients-list-item a:hover {
+  color: var(--accent-color);
+  border-color: var(--accent-color);
+}
 /* СТРАНИЦА ПОРТФОЛИО */
 /* Кнопки фильтра превью проектов*/
 .filter-buttons-list {
