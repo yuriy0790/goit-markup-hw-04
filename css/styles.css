@@ -310,6 +310,7 @@ body {
 }
 .team-container {
   padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .team-list .teammate-name {
@@ -330,10 +331,8 @@ body {
 /* Соцсети */
 .teammate-social-list {
   display: flex;
-  justify-content: space-between;
-  padding-right: 32px;
-  padding-left: 32px;
-  padding-bottom: 30px;
+  justify-content: center;
+  gap: 10px;
   margin-top: 16px;
 }
 
@@ -492,20 +491,21 @@ body {
 
 .container-logo-address-social {
   display: flex;
+  align-items: baseline;
 }
 .footer-social {
   margin-left: 70px;
-  padding-top: 12px;
 }
 .footer-social-list {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 10px;
   width: 206px;
   margin-top: 20px;
 }
-.footer-social-list-header {
+.join-social {
   color: var(--title-secondary-text-color);
-  /* font-weight: 700; значение для заголовков умолчанию*/
+  font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
