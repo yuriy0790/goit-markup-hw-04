@@ -326,6 +326,7 @@ body {
   line-height: 1.19;
   text-align: center;
 }
+/* Соцсети */
 .teammate-social-list {
   display: flex;
   justify-content: space-between;
@@ -435,6 +436,7 @@ body {
 /* Адрес в футере*/
 .footer-contacts-area {
   margin-top: 20px;
+  width: 231px;
 }
 .contact-footer {
   display: block;
@@ -454,4 +456,30 @@ body {
 .contact-footer:focus,
 .contact-footer:hover {
   color: var(--accent-color);
+}
+/* Социальные сети в футере */
+
+.container-logo-address-social {
+  display: flex;
+}
+.footer-social {
+  margin-left: 70px;
+  padding-top: 12px;
+}
+.footer-social-list {
+  display: flex;
+  justify-content: space-between;
+  width: 206px;
+  margin-top: 20px;
+}
+.footer-social-list-header {
+  color: var(--title-secondary-text-color);
+  /* font-weight: 700; значение для заголовков умолчанию*/
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+.footer-social-list a {
+  color: var(--page-background);
+  background-color: rgba(255, 255, 255, 0.1);
 }
