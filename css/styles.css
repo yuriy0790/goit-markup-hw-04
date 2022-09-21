@@ -309,7 +309,6 @@ body {
 }
 .team-container {
   padding-top: 30px;
-  padding-bottom: 30px;
 }
 
 .team-list .teammate-name {
@@ -327,6 +326,34 @@ body {
   line-height: 1.19;
   text-align: center;
 }
+.teammate-social-list {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 32px;
+  padding-left: 32px;
+  padding-bottom: 30px;
+  margin-top: 16px;
+}
+
+.social-list-item a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  color: #afb1b8;
+}
+.social-icon {
+  height: 20px;
+  width: 20px;
+  fill: currentColor;
+}
+.social-list-item a:hover {
+  background-color: var(--accent-color);
+  color: var(--page-background);
+}
+
 /* СТРАНИЦА ПОРТФОЛИО */
 /* Кнопки фильтра превью проектов*/
 .filter-buttons-list {
