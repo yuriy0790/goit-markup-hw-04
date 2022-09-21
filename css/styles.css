@@ -415,7 +415,7 @@ body {
 .filter-buttons-list .list-item:not(:last-child) {
   margin-right: 8px;
 }
-.filter-buttons-list .filter-button.little-button {
+.filter-button.little-button {
   padding-right: 25px;
   padding-left: 25px;
 }
@@ -439,20 +439,25 @@ body {
   border-bottom: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
 }
-.projects-preview-list .list-item:hover {
+.projects-preview-list .project-link {
+  display: block;
+}
+.projects-preview-list .project-link:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .projects-preview-list .project-preview-name {
   color: var(--title-primary-text-color);
-  /* font-weight: 700; значение для заголовков умолчанию*/
+  font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
 }
 .projects-preview-list .project-type {
+  color: var(--primary-text-color);
+
   margin-top: 4px;
-  /* font-weight: 400; значение для параграфа умолчанию */
+  font-weight: 400;
   font-size: 16px;
   line-height: 1.88;
 }
